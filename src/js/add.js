@@ -1,3 +1,6 @@
+"use strict";
+
+const APIURL = "http://localhost:3000/api/workexperience";
 const form = document.getElementById("form");
 const messageEl = document.getElementById("message");
 
@@ -29,7 +32,7 @@ form.addEventListener("submit", async (e) => {
     const errorsForm = validateForm(formData);
 
     if (errorsForm.length > 0) {
-        messageEl.innerHTML = errors.map(err => `<p>${err}</p>`).join("");
+        messageEl.innerHTML = errorsForm.map(err => `<p>${err}</p>`).join("");
         return;
     }
 
