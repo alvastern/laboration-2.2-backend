@@ -51,3 +51,27 @@
         color: black;
     }
 }
+
+.text {
+    margin: 0 5vw;
+    width: 65vh;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5vh;
+    }
+
+    #form {
+        input, textarea, button {
+            width: 60vw;
+        }
+    }
+
+    .text {
+        width: 80vw;
+    }
+}

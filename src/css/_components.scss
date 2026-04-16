@@ -10,3 +10,9 @@
     background-color: rgb(211, 105, 127);
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    #delete-button {
+        margin: 3vh 0 3vh 0;
+    }
+}

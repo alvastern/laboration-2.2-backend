@@ -51,10 +51,45 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
-    margin: 5vh 5vw;
+    margin: 3vh 0;
+}
+
+.rubrik-text {
+    margin: 3vh 5vw;
 }
 
 ul {
   padding-left: 0;
   margin: 0;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 5vh;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        flex-direction: column;
+
+        ul {
+            flex-direction: column;
+            gap: 3vh;
+        }
+    }
+
+    header ul li a {
+        display: block;
+        width: 80vw;
+        text-align: center;
+        border-radius: 10px;
+    }
 }
