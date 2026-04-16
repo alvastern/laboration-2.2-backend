@@ -1,5 +1,7 @@
 "use strict";
 
+import "../css/main.scss";
+
 const APIURL = "http://localhost:3000/api/workexperience";
 const form = document.getElementById("form");
 const messageEl = document.getElementById("message");
