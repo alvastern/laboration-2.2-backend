@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>laboration-2.2-backend</title>
+    <title>Laboration 2</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header>
+      <h1>Mitt CV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="add.html">Lägg till erfarenhet</a></li>
+          <li><a href="about.html">Om sidan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Mina arbetslivserfarenheter</h2>
+
+        <ul id="erfarenhet-lista"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

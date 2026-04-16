@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboration 2</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mitt CV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="add.html">Lägg till erfarenhet</a></li>
+          <li><a href="about.html">Om sidan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Lägg till erfarenhet</h2>
+
+        <form id="form">
+            <input type="text" name="company_name" placeholder="Företag">
+            <input type="text" name="position" placeholder="Jobbtitel">
+            <input type="text" name="location" placeholder="Plats">
+            <input type="date" name="start_date">
+            <input type="date" name="end_date">
+            <textarea name="description" placeholder="Beskrivning"></textarea>
+
+            <button type="submit">Lägg till</button>
+        </form>
+
+        <div id="message"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
