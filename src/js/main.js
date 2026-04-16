@@ -14,6 +14,7 @@ async function loadWorkExperience () {
 
         data.forEach(item => {
             const li = document.createElement("li");
+            li.classList.add("experience-item");
 
             li.innerHTML = `
             <h3>${item.company_name}</h3>
@@ -21,7 +22,7 @@ async function loadWorkExperience () {
             <p>${item.location}</p>
             <p>${item.start_date} - ${item.end_date}</p>
             <p>${item.description}</p>
-            <button data-id="${item.id}">Radera</button>
+            <button id="delete-button" data-id="${item.id}">Radera</button>
             `;
 
             experienceList.appendChild(li);
